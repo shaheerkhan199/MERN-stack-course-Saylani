@@ -1,0 +1,105 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+}
+.container{
+    width: 70%;
+    display:block;
+    margin:auto;
+}
+h1{
+    text-align: center;
+    color: #6B5ACD;
+}
+img{
+    display:block;
+    margin:auto;
+}
+form{
+    color: aliceblue;
+    padding: 5px;
+    width:100%; 
+    margin:0 auto;
+    background-color: #6B5ACD;
+    border: 2px solid black;
+    border-radius:15px;
+}
+form tr, td{
+    padding: 5px;
+}
+#table1 {
+    border-collapse: separate;
+  }
+  
+#table2 {
+    border-collapse: collapse;
+  }
+.successContainer{
+    display:block;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.successContainer h1{
+    color: #00B928;
+}
+.successContainer h2{
+    color:#7E02BA;
+}
+.successContainer a{
+    color:#7E02BA;
+    font-weight: bold;
+    font-size: 35px;
+}
+/* Index Page styling */
+.header{
+    width: 100%;
+    background-color: lightseagreen;
+    border: 1px solid black;
+}
+.header h1{
+    color: beige;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0px;
+    top: 0px;
+}
+nav ul{
+    margin-top: 0;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+footer{
+    background: lightseagreen;
+    padding: 1px;
+    text-align: center;
+
+}
+#mainTable tr td{
+    padding: 20px;
+}
+#mainTable a{
+    text-decoration: none;
+    background-color: lightseagreen;
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+#mainTable a:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
