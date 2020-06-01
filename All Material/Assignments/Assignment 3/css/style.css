@@ -1,0 +1,345 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    background-color: #F7F8FA;
+}
+.upper-nav{
+    background-color: #316DC3 !important;
+    height: 50px;
+    width: 100%;
+    /* opacity: 0.6; */
+}
+.top1{
+    height: 20px;
+    width: 20%;
+    float: left;
+    margin: 10px 20px;
+    text-align: center;
+}
+.top1 i{
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+}
+.top2{
+    height: 20px;
+    width: 40%;
+    float: left;
+    margin: 10px 20px;
+    text-align: center;
+    color:white;
+}
+.top2 p{
+    font-size: 0.9em;
+    padding-top: 7px;
+}
+.top3{
+    height: 20px;
+    /* width: 20%; */
+    float: left;
+    margin: 10px 20px;
+    text-align: right;
+}
+.top3 input{
+    padding: 5px;
+    margin: auto;
+}
+.main-nav{
+    background-color: lightgray;
+    height: 70px;
+    width: 100%;
+    /* position: fixed; */
+}
+.logo-div{
+    width: 20%;
+    height: 70px;
+    margin-left: 100px;
+    float: left;
+}
+.nav-links{
+    /* background-color: green; */
+    height: 70px;
+    width: 50%;
+    float: left;
+    margin-left: 200px;
+}
+.slider-image{
+    height: 450px;
+    width: 100%;
+}
+.nav-links ul li{
+    display: inline-block;
+    margin-top: 25px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+.active{
+    background-color: #316DC3 !important;
+    /* opacity: 0.5; */
+    padding: 10px;
+    color: white !important;
+    border-radius: 20px;
+
+}
+.nav-links ul li a:hover{
+    background-color: #316DC3 !important;
+    /* opacity: 0.5; */
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+.marquee-div{
+    background-color: royalblue;
+    padding: 5px;
+    margin: 20px auto;
+    color: white;
+    width: 90%;
+}
+.intro-div{
+    width: 75%;
+    /* background-color: green; */
+    /* height: 250px; */
+    margin: auto;
+    text-align: center;
+}
+.intro-div h1{
+    color: royalblue;
+}
+.intro-div font{
+    color: green;
+    opacity: 0.7;
+}
+.intro-div p{
+    text-align: justify;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin: 10px 20px;
+}
+.figures-div{
+    background-color: rgba(36, 79, 242, 1) !important;
+    /* opacity: 0.6; */
+    width: 100%;
+    height: 350px;
+    margin-top: 100px;
+}
+.welfare1{
+    height: 250px;
+    width: 23%;
+    /* background-color: chartreuse; */
+    margin: 40px 10px;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid lime;
+    border-radius: 50px;
+}
+
+.welfare1 span{
+    position: relative;
+    top: 50px;
+}
+.welfare1 i{
+    font-size: 35px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.welfare1 p{
+    margin-top: 60px;
+    padding: 5px;
+}
+.welfare1 font{
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+}
+.services{
+    /* height: 250px; */
+    width: 80%;
+    margin: 20px auto;
+    /* background-color: red; */
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.services h1{
+    color: royalblue;
+} 
+.services font{
+    color: green;
+    opacity: 0.7;
+}  
+.service{
+    background-color: white;
+    height: 250px;
+    width: 30%;
+    float: left;
+    margin: 50px 16px;
+    box-shadow: 0px 0px 10px 5px lightgrey;
+}
+
+.service span{
+    position: relative;
+    top: 60px;
+}
+.service p{
+    margin-top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    color: royalblue;
+}
+.mission-events{
+    /* background-color: red; */
+    height: 300px;
+    width: 100%;
+    clear: both;
+    /* border: 1px solid black; */
+}
+.mission-events h1{
+    color: royalblue;
+    margin: 20px 50px;
+}
+.mission-events hr{
+    margin: 20px 50px;
+}
+.mission{
+    /* background-color: yellow; */
+    /* height: 400px; */
+    width: 65%;
+    /* display: inline-block; */
+    float: left;
+}
+.events{
+    /* background-color: palevioletred; */
+    /* height: 400px; */
+    /* overflow: scroll; */
+    /* height: 400px; */
+    width: 35%;
+    float: left;
+    /* display: inline-block; */
+}
+
+.events p{
+    color: royalblue;
+    margin: 20px 50px;
+}
+.events-para{
+    text-align: justify;
+    color: black !important;
+    /* margin: 0px 0px !important; */
+    /* overflow: scroll;     */
+}
+.para-div{
+    max-height: 200px;
+    width: 100%;
+    overflow: scroll;
+    /* background-color: blueviolet; */
+}
+table tr, td{
+    padding: 30px 70px;
+    color: royalblue;
+    /* background-color: lightslategray; */
+    /* opacity: 0.3; */
+    border: 1px solid lightslategray;
+    /* background-color: #F7F8FA; */
+}
+table{
+    margin: auto 50px;
+}
+
+.image-gallery{
+    /* background-color: pink; */
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+}
+.image-gallery h1{
+    color: royalblue;
+    /* margin-top: 50px !important; */
+}
+.image-gallery font{
+    color: green;
+}
+.image-gallery hr{
+    margin: auto;
+}
+.image-gallery img{
+    max-height: 150px;
+    max-width: 220px;
+    padding: 5px;
+    margin-top: 50px;
+}
+.footer{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    margin-top: 150px;
+    opacity: 0.85;
+}
+footer{
+    background-color: #316DD9;
+    height: 50px;
+    width: 100%;
+}
+footer p{
+    /* margin-top: 10px; */
+    color: white;
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.contact, .links, .social{
+    width: 30%;
+    height: 250px;
+    /* display: inline-block; */
+    float: left;
+    /* background-color: greenyellow; */
+    border: 1px solid black;
+    margin: 80px 15px;
+    color: grey;
+}
+.contact p{
+    color: grey;
+    padding: 10px;
+}
+.links h4{
+    color: white;
+    padding-bottom: 10px;
+}
+.social h4{
+    color: white;
+}
+.footer i{
+    color:  white;
+    padding: 10px;
+    background-color: #316DD9;
+    margin: 20px auto;
+    border-radius: 20px;
+    font-size: 20px;
+}
+/* .links{
+    width: 20%;
+    height: 250px;
+    display: inline-block;
+    background-color: red;
+    border: 1px solid black;
+}
+.social{
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    background-color: pink;
+    border: 1px solid black;
+} */
