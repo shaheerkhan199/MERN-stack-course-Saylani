@@ -1,274 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-	<link href="css/customStyle.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+  <link href="css/customStyle.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
+
 <body>
   <section>
     <div class="container-fluid">
-        <div class="row bg-dark text-light ">
-            <div class="col-md-12 text-center">
-            <p class="uppernav pt-1">
-                <a href="">Customer Care</a> |
-                <a href="">Today's Offer</a> |
-                <a href="">Download App</a> |
-                <a href="">Advertise</a> |
-                <a href="">Sell Product</a> |
-                <a href="">Track Order</a> |
-                <a href="">Terms and Conditions</a> |
-                <a href="">Support</a> |
-                <a href="">Delivery</a></p>
-            </div>
+      <div class="row bg-dark text-light ">
+        <div class="col-md-12 text-center">
+          <p class="uppernav pt-1">
+            <a href="">Customer Care</a> |
+            <a href="">Today's Offer</a> |
+            <a href="">Download App</a> |
+            <a href="">Advertise</a> |
+            <a href="">Sell Product</a> |
+            <a href="">Track Order</a> |
+            <a href="">Terms and Conditions</a> |
+            <a href="">Support</a> |
+            <a href="">Delivery</a></p>
         </div>
+      </div>
 
-        <div class="row mt-1 ">
-            <div class="col-md-2 logo mt-3">
-                <a href="/shop/" ><h3>SmartShop</h3></a>
-            </div>
-            <div class="col-md-8">
-                <div class="row mt-1">
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" placeholder="Search here" name="">
-                    </div>
-                    <div class="col-md-2 mt-2">
-                        <input type="button" value="Search" class="btn btn-success" name="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2 mt-3">
-                <input type="button" value="Cart" class="btn btn-warning btn-block" name="">
-            </div>
+      <div class="row mt-1 ">
+        <div class="col-md-2 logo mt-3">
+          <a href="/shop/">
+            <h3>SmartShop</h3>
+          </a>
         </div>
+        <div class="col-md-8">
+          <div class="row mt-1">
+            <div class="col-md-10">
+              <input type="text" class="form-control" placeholder="Search here" name="">
+            </div>
+            <div class="col-md-2 mt-2">
+              <input type="button" value="Search" class="btn btn-success" name="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mt-3">
+          <!-- <input type="button" value="Cart" class="btn btn-warning btn-block" name=""> -->
+          <a class="btn btn-success  btn-block" href="cart.html">
+            <i class="fa fa-shopping-cart"></i> Cart
+            <span class="badge badge-light">3</span>
+          </a>
+        </div>
+      </div>
 
-        <div class="row bg-dark mt-2">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+      <div class="row bg-dark mt-2">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Products Categories
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Mens and Womens Fasion</a>
-                          <a class="dropdown-item" href="#">Electronics</a>
-                          <a class="dropdown-item" href="#">Grocery</a>
-                        </div>
-                      </li>
-                    </ul>
-                    <span class="navbar-text">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
-                      </ul>
-                    </span>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Products Categories
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Mens and Womens Fasion</a>
+                    <a class="dropdown-item" href="#">Electronics</a>
+                    <a class="dropdown-item" href="#">Grocery</a>
                   </div>
-                </nav>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                  <li class="nav-item"><a class="nav-link" href="signup.html">Signup</a></li>
+                </ul>
+              </span>
             </div>
-            
+          </nav>
         </div>
+
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- Navigartion end -->
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="demo" class="carousel slide" data-ride="carousel">
 
-                      <!-- Indicators -->
-                      <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                        <li data-target="#demo" data-slide-to="3"></li>
-                      </ul>
-                      <!-- The slideshow -->
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="images/pic2.png" alt="Los Angeles" width="100%" height="400">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="images/pic1.jpg" alt="Chicago" width="100%" height="400">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="images/pic3.jpg" alt="New York" width="100%" height="400">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="images/pic4.jpg" alt="New York" width="100%" height="400">
-                        </div>
-                      </div>
-
-                      <!-- Left and right controls -->
-                      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                      </a>
-                      <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                      </a>
-                    </div>
-                </div>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pic2.png" alt="Los Angeles" width="100%" height="400">
+              </div>
+              <div class="carousel-item">
+                <img src="images/pic1.jpg" alt="Chicago" width="100%" height="400">
+              </div>
+              <div class="carousel-item">
+                <img src="images/pic3.jpg" alt="New York" width="100%" height="400">
+              </div>
+              <div class="carousel-item">
+                <img src="images/pic4.jpg" alt="New York" width="100%" height="400">
+              </div>
             </div>
-        </div>
-    </section>  <!--Header End -->
 
-<!--This is start of products catalog-->
-<div class="container">
-<h2 class="text-center mt-5"> Product Catlog</h2>
-<hr color="lightgrey" />
-<div class="row ">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
-      <div class="card">
-        <img class="card-img" src="images/hoodie.png" alt="Vans" height="250" width="150">
-        <div class="card-body">
-          <h4 class="card-title">Product Name</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
-          <p class="card-text">
-            This is description</p>
-          <div class="price "><h5 class="mt-4">Rs-1500/=</h5></div>
-          <div class="buy d-flex justify-content-between align-items-center">
-
-    <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-    <!--                <input type="button" class="btn btn-danger" value="View Product">-->
-                <a href="productDetails.html" class="btn btn-danger">View Product</a>
-                <a href="#" class="btn btn-warning">Add to cart</a>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Catlog 2 -->
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
-      <div class="card">
-        <img class="card-img" src="images/jeans2.jpg" alt="Vans" height="250" width="150">
-        <div class="card-body">
-          <h4 class="card-title">Product Name</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
-          <p class="card-text">
-            This is description</p>
-          <div class="price "><h5 class="mt-4">Rs-1500/=</h5></div>
-          <div class="buy d-flex justify-content-between align-items-center">
+  </section>
+  <!--Header End -->
 
-    <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-    <!--                <input type="button" class="btn btn-danger" value="View Product">-->
-                <a href="productDetails.html" class="btn btn-danger">View Product</a>
-                <a href="#" class="btn btn-warning">Add to cart</a>
+  <!--This is start of products catalog-->
+  <div class="container">
+    <h2 class="text-center mt-5"> Product Catlog</h2>
+    <hr color="lightgrey" />
+    <div class="row ">
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+        <div class="card">
+          <img class="card-img" src="images/hoodie.png" alt="Vans" height="250" width="150">
+          <div class="card-body">
+            <h4 class="card-title">Product Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
+            <p class="card-text">
+              This is description</p>
+            <div class="price ">
+              <h5 class="mt-4">Rs-1500/=</h5>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
+
+              <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+              <!--                <input type="button" class="btn btn-danger" value="View Product">-->
+              <a href="productDetails.html" class="btn btn-danger">View Product</a>
+              <a href="#" class="btn btn-warning">Add to cart</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Catlog 3 -->
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
-      <div class="card">
-        <img class="card-img" src="images/watch.jpg" alt="Vans" height="250" width="150">
-        <div class="card-body">
-          <h4 class="card-title">Product Name</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
-          <p class="card-text">
-            This is description</p>
-          <div class="price "><h5 class="mt-4">Rs-1500/=</h5></div>
-          <div class="buy d-flex justify-content-between align-items-center">
+      <!-- Catlog 2 -->
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+        <div class="card">
+          <img class="card-img" src="images/jeans2.jpg" alt="Vans" height="250" width="150">
+          <div class="card-body">
+            <h4 class="card-title">Product Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
+            <p class="card-text">
+              This is description</p>
+            <div class="price ">
+              <h5 class="mt-4">Rs-1500/=</h5>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
 
-    <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-    <!--                <input type="button" class="btn btn-danger" value="View Product">-->
-                <a href="productDetails.html" class="btn btn-danger">View Product</a>
-                <a href="#" class="btn btn-warning">Add to cart</a>
+              <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+              <!--                <input type="button" class="btn btn-danger" value="View Product">-->
+              <a href="productDetails.html" class="btn btn-danger">View Product</a>
+              <a href="#" class="btn btn-warning">Add to cart</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Catlog 4 -->
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
-      <div class="card">
-        <img class="card-img" src="images/laptop.png" alt="Vans" height="250" width="150">
-        <div class="card-body">
-          <h4 class="card-title">Product Name</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
-          <p class="card-text">
-            This is description</p>
-          <div class="price "><h5 class="mt-4">Rs-1500/=</h5></div>
-          <div class="buy d-flex justify-content-between align-items-center">
+      <!-- Catlog 3 -->
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+        <div class="card">
+          <img class="card-img" src="images/watch.jpg" alt="Vans" height="250" width="150">
+          <div class="card-body">
+            <h4 class="card-title">Product Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
+            <p class="card-text">
+              This is description</p>
+            <div class="price ">
+              <h5 class="mt-4">Rs-1500/=</h5>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
 
-    <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-    <!--                <input type="button" class="btn btn-danger" value="View Product">-->
-                <a href="productDetails.html" class="btn btn-danger">View Product</a>
-                <a href="#" class="btn btn-warning">Add to cart</a>
+              <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+              <!--                <input type="button" class="btn btn-danger" value="View Product">-->
+              <a href="productDetails.html" class="btn btn-danger">View Product</a>
+              <a href="#" class="btn btn-warning">Add to cart</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Catlog 5 -->
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
-      <div class="card">
-        <img class="card-img" src="images/hoodie.jpg" alt="Vans" height="250" width="150">
-        <div class="card-body">
-          <h4 class="card-title">Product Name</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
-          <p class="card-text">
-            This is description</p>
-          <div class="price "><h5 class="mt-4">Rs-1500/=</h5></div>
-          <div class="buy d-flex justify-content-between align-items-center">
+      <!-- Catlog 4 -->
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+        <div class="card">
+          <img class="card-img" src="images/laptop.png" alt="Vans" height="250" width="150">
+          <div class="card-body">
+            <h4 class="card-title">Product Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
+            <p class="card-text">
+              This is description</p>
+            <div class="price ">
+              <h5 class="mt-4">Rs-1500/=</h5>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
 
-    <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-    <!--                <input type="button" class="btn btn-danger" value="View Product">-->
-                <a href="productDetails.html" class="btn btn-danger">View Product</a>
-                <a href="#" class="btn btn-warning">Add to cart</a>
+              <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+              <!--                <input type="button" class="btn btn-danger" value="View Product">-->
+              <a href="productDetails.html" class="btn btn-danger">View Product</a>
+              <a href="#" class="btn btn-warning">Add to cart</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Catlog 6 -->
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
-      <div class="card">
-        <img class="card-img" src="images/shoes.jpg" alt="Vans" height="250" width="150">
-        <div class="card-body">
-          <h4 class="card-title">Product Name</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
-          <p class="card-text">
-            This is description</p>
-          <div class="price "><h5 class="mt-4">Rs-1500/=</h5></div>
-          <div class="buy d-flex justify-content-between align-items-center">
+      <!-- Catlog 5 -->
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+        <div class="card">
+          <img class="card-img" src="images/hoodie.jpg" alt="Vans" height="250" width="150">
+          <div class="card-body">
+            <h4 class="card-title">Product Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
+            <p class="card-text">
+              This is description</p>
+            <div class="price ">
+              <h5 class="mt-4">Rs-1500/=</h5>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
 
-    <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
-    <!--                <input type="button" class="btn btn-danger" value="View Product">-->
-                <a href="productDetails.html" class="btn btn-danger">View Product</a>
-                <a href="#" class="btn btn-warning">Add to cart</a>
+              <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+              <!--                <input type="button" class="btn btn-danger" value="View Product">-->
+              <a href="productDetails.html" class="btn btn-danger">View Product</a>
+              <a href="#" class="btn btn-warning">Add to cart</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- Catlog 6 -->
+      <div class="col-12 col-sm-8 col-md-6 col-lg-4 mt-2">
+        <div class="card">
+          <img class="card-img" src="images/shoes.jpg" alt="Vans" height="250" width="150">
+          <div class="card-body">
+            <h4 class="card-title">Product Name</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Product ID- 100101</h6>
+            <p class="card-text">
+              This is description</p>
+            <div class="price ">
+              <h5 class="mt-4">Rs-1500/=</h5>
+            </div>
+            <div class="buy d-flex justify-content-between align-items-center">
 
-</div>
-</div>  <!-- Catlog container end-->
-<!-- Footer -->
-<br/>
-    <footer class="text-center text-light bg-dark p-2">
-              <p>Copyright &copy; 2020 | Designed by Sheri </p>
-    </footer>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
-    <script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+              <!--             <a href="#" class="btn btn-danger mt-3 po"> Add to Cart</a><a href="#">Negotiate</a>-->
+              <!--                <input type="button" class="btn btn-danger" value="View Product">-->
+              <a href="productDetails.html" class="btn btn-danger">View Product</a>
+              <a href="#" class="btn btn-warning">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- Catlog container end-->
+  <!-- Footer -->
+  <br />
+  <footer class="text-center text-light bg-dark p-2">
+    <p>Copyright &copy; 2020 | Designed by Sheri </p>
+  </footer>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
