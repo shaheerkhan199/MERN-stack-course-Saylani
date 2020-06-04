@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chapter 1 Assignment</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    <script>
+    // Question 1
+        var a = 10;
+        document.write("Result: <br>")
+        document.write("The value of a is :"+a+"<br>");
+        document.write("--------------------------<br>")
+        document.write("The value of ++a is :" + ++a +"<br>");
+        document.write("Now the value of a is :" + a +"<br>");
+        document.write("--------------------------<br>")
+        document.write("The value of a++ is :" + a++ +"<br>");
+        document.write("Now the value of a is :" + a +"<br>");
+        document.write("--------------------------<br>")
+        document.write("The value of --a is :" + --a +"<br>");
+        document.write("Now the value of a is :" + a +"<br>");
+        document.write("--------------------------<br>")
+        document.write("The value of a-- is :" + a-- +"<br>");
+        document.write("Now the value of a is :" + a +"<br>");
+       
+
+    // Question 2
+        var a = 2;
+        var b = 1;
+        var result =  --a - --b + ++b + b--;
+        document.write("a is :"+ a + "<br>");
+        document.write("b is :"+ b + "<br>");
+        document.write("Result is :"+ result);
+        
+    // Question 3
+       var name = prompt("Enter your name");
+       alert("Hello! "+ name + " It's coding time");
+
+    // Question 4
+          
+     
+    // Question 5
+        var tableNumber = (+prompt("Enter a number to print the table"));
+        if(tableNumber != "")
+        {
+            for(var i =1; i<=10; i++)
+            {
+                document.write(tableNumber +" x " + i + " = "+ tableNumber*i+ "<br>");
+            }
+        }
+        else
+        {
+            tableNumber = 5;
+            for(var i =1; i<=10; i++)
+            {
+                document.write(tableNumber +" x " + i + " = "+ tableNumber*i+ "<br>");
+            }
+
+        }
+        
+
+     
+    // Question 6
+        var subj1Name = prompt("Enter the name of subject 1:");
+        var subj2Name = prompt("Enter the name of subject 2:");
+        var subj3Name = prompt("Enter the name of subject 3:");
+        var totalMarksOfEachSubject = 100;
+        var subj1Marks = (+prompt("Enter the marks of subject 1:"));
+        var subj2Marks = (+prompt("Enter the marks of subject 2:"));
+        var subj3Marks = (+prompt("Enter the marks of subject 3:"));
+        var totalObtainMarks = subj1Marks+subj2Marks+subj3Marks;
+        var percentage = (totalObtainMarks/(totalMarksOfEachSubject*3))*100;
+        document.write("<table border='1'>");
+            document.write("<tr>");
+                document.write("<th> Subject </th>");
+                document.write("<th> Total Marks </th>");
+                document.write("<th> Obtained Marks </th>");
+                document.write("<th> Percentage </th>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td> "+subj1Name+" </td>");
+                document.write("<td> "+totalMarksOfEachSubject+" </td>");
+                document.write("<td>"+ subj1Marks+"</td>");
+                document.write("<td> "+subj1Marks+"%"+" </td>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td> "+subj2Name+" </td>");
+                document.write("<td> "+totalMarksOfEachSubject+" </td>");
+                document.write("<td>"+ subj2Marks+"</td>");
+                document.write("<td> "+subj2Marks+"%"+" </td>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td> "+subj3Name+" </td>");
+                document.write("<td> "+totalMarksOfEachSubject+" </td>");
+                document.write("<td>"+ subj3Marks+"</td>");
+                document.write("<td> "+subj3Marks+"%"+" </td>");
+            document.write("</tr>");
+            document.write("<tr>");
+                document.write("<td> </td>");
+                document.write("<td> "+(totalMarksOfEachSubject*3)+" </td>");
+                document.write("<td>"+ totalObtainMarks+"</td>");
+                document.write("<td> "+percentage+"%"+" </td>");
+            document.write("</tr>");
+        document.write("</table>");
+        
+    </script>
+</body>
+
+</html>
