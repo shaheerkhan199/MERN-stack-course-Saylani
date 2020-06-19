@@ -179,3 +179,169 @@
     // }else{
     //     document.writeln("Try again");
     // }
+
+// Chapter 31-34
+// Task 1
+    // var currentDateAndTime = new Date();
+    // document.writeln(currentDateAndTime);
+// Task 2
+    // var months = ["January","Feburary", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
+    // var currentDateAndTime = new Date();
+    // var currentMonth = currentDateAndTime.getMonth();
+    // document.write("Current Month is: "+ months[currentMonth]);
+// Task 3
+    // var days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thuraday", "Friday", "Saturday"];
+    // var currentDateAndTime = new Date();
+    // var currentDay = currentDateAndTime.getDay();
+    // document.write("Today is: "+ days[currentDay]);
+// Task 4
+    // var days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thuraday", "Friday", "Saturday"];
+    // var currentDateAndTime = new Date();
+    // var currentDay = currentDateAndTime.getDay();
+    // if(days[currentDay] === "Saturday" || days[currentDay] === "Sunday" ){
+    //     document.write("It's fun day");
+    // }else{
+    //     document.write("It's normal day");
+    // }
+// Task 5
+    // var currentDateAndTime = new Date();
+    // var currentDate = currentDateAndTime.getDate();
+    // if(currentDate < 16){
+    //     document.write("First fifteen days of the month");
+    // }else{
+    //     document.write("Last days of the month");
+    // }
+// Task 6
+    // var currentDateAndTime = new Date();
+    // var oldDate = new Date("Jan 1, 1970");
+    // var diffInMilliSec = currentDateAndTime.getTime()-oldDate.getTime();
+    // var elapsedMins = diffInMilliSec/(1000*60*60);
+    // document.write("Current Date: "+currentDateAndTime+"<br>");
+    // document.write("Elapsed milli seconds since Jan 1, 1970: "+diffInMilliSec+"<br>");
+    // document.write("Elapsed minutes since Jan 1, 1970: "+elapsedMins);
+// Task 7
+    // var currentDateAndTime = new Date();
+    // var hour = currentDateAndTime.getHours();
+    // if(hour > 12){
+    //     alert("It's PM");
+    // }else{
+    //     alert("It's AM");
+    // }
+
+// Task 8
+    // var laterDate = new Date("Dec 31, 2020");
+    // document.write("Last day of this year: "+ laterDate);
+// Task 9
+    // var firstRamadan = new Date("June 18, 2015");
+    // var currentDateAndTime = new Date();
+    // var diff =currentDateAndTime.getTime()-firstRamadan.getTime();
+    // var days = Math.floor(diff/(1000*60*60*24));
+    // document.write(days+" days have passed since 1st Ramadan, 2015");
+// Task 10
+    // var beginning = new Date("Jan 1, 2015");
+    // var refrenceDate = new Date("Dec 5, 2015");
+    // var elapsedSec = (refrenceDate.getTime()-beginning.getTime())/(1000*60);
+    // document.write("on reference date: "+refrenceDate+"<br>");
+    // document.write(elapsedSec+" seconds has passed since beginning of 2015");
+
+// Task 11
+    // var currentDateAndTime = new Date();
+    // document.write("Current date: "+ currentDateAndTime+"<br>");
+    // currentDateAndTime.setHours(currentDateAndTime.getHours()-1);
+    // document.write("One hour ago it was: "+ currentDateAndTime);
+// Task 12
+    // var currentDateAndTime = new Date();
+    // document.write("Current date: "+ currentDateAndTime+"<br>");
+    // currentDateAndTime.setFullYear((currentDateAndTime.getFullYear()-100));
+    // document.write("100 years back it was: "+ currentDateAndTime);
+// Task 13
+    // var userAge = (+prompt("Enter your age"));
+    // var currentDateAndTime = new Date();
+    // var birthYear = currentDateAndTime.getFullYear() - userAge;
+    // document.write("Your age is: "+ userAge+"<br>");
+    // document.write("Your birth year is: "+birthYear);
+
+// Task 14
+    // var customerName = "Kashif";
+    // var currentMonth  = "Feburary";
+    // var units = 410;
+    // var chargesPerUnit = 16;
+    // var latePaySurcharge = 350;
+    // var netAmountWithinDueDate = units*chargesPerUnit;
+    // var grossAmountAfterDueDate = netAmountWithinDueDate+latePaySurcharge;
+    // document.write("<h1>K-Electric Bill</h1><br>");
+    // document.write("Customer Name: "+customerName+"<br>");
+    // document.write("Month: "+currentMonth+"<br>");
+    // document.write("Number of Units: "+units+"<br>");
+    // document.write("Charges per unit: "+chargesPerUnit+"<br><br>");
+    // document.write("Net Amount Payable (within Due Date): "+netAmountWithinDueDate+"<br>");
+    // document.write("Late Payment Surcharge: "+latePaySurcharge+"<br>");
+    // document.write("Gross Amount Payable (after Due Date): "+grossAmountAfterDueDate+"<br>");
+
+// Chapter 35-38
+// Task 1
+    // function showCurrentDateAndTime(){
+    //     alert(new Date());
+    // }
+    // showCurrentDateAndTime();
+// Task 2
+    // function greetUser(firstName, lastName){
+    //     alert("Hello! "+ firstName + " " + lastName);
+    // }
+    // greetUser("M.Shaheer","khan");
+// Task 3
+    // function addNums(){
+    //     var num1 = (+prompt("Enter first Number"));
+    //     var num2 = (+prompt("Enter second Number"));
+    //     return num1+num2;
+    // }
+    // document.write(addNums());
+// Task 4
+// Task 5
+    // function square(num){
+    //     return num*num;
+    // }
+    // document.write(square(3));
+// Task 6
+    // function factorial(num){
+    //     var result = 1;
+    //     for(var i=num; i>=1; i--){
+    //         result = result*i;
+    //     }
+    //     return result;
+    // }
+    // document.write(factorial(5));
+
+// Task 7
+    // function printCounting(){
+    //     var start = (+prompt("Enter start Number"));
+    //     var end = (+prompt("Enter end Number"));
+    //     for(var i=start; i<=end; i++){
+    //         document.write(i + "<br>");
+    //     }
+    // }
+    // printCounting();
+// Task 8
+// Task 9
+// Task 10
+    function checkPalandrome(string){
+        reverseOfString = "";
+        for(var i=string.length-1; i>=0; i--){
+            reverseOfString = reverseOfString + string[i];
+        } 
+        if(reverseOfString === string){
+            document.write(string + " is palandrome");
+        }else{
+            document.write(string+ " is not palandrome");
+        }
+    }
+    checkPalandrome("1212");
+// Task 11
+// Task 12
+// Task 13
+// Task 14
+
+
+
+
+
