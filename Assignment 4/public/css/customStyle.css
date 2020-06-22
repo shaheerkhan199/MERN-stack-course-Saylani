@@ -99,3 +99,7 @@ footer {
 footer a {
     color: #f8f9fa!important
 }
+#inc, #dec{
+    height: 40px;
+    margin-top: 10px;
+}
