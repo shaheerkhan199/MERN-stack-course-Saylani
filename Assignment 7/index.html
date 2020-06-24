@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calaulator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .footer{
+            background-color: lightgray;
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .box{
+            background-color: #224662 !important;
+            opacity: 0.8;
+            padding: 15px;
+        }
+        input[type="text"]
+        {
+            background-color: lightgray;
+            padding: 50px;
+            font-size: 40px;
+        }
+        html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+
+    button {
+      height: 60px;
+      font-size: 2rem!important;
+    }
+
+    .equal-sign {
+      height: 100%;
+      grid-area: 2 / 4 / 6 / 5;
+    }
+
+    .calculator-keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center headerAndFooter">
+        <h1>Simple Calculator Application</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 box">
+            <div class="form-group">
+                <input type="text" placeholder="0" class="form-control">
+            </div>
+            <div class="calculator-keys">
+
+                <button type="button" class="operator btn btn-info" value="+">+</button>
+                <button type="button" class="operator btn btn-warning" value="-">-</button>
+                <button type="button" class="operator btn btn-primary" value="*">x</button>
+                <button type="button" class="operator btn btn-danger" value="/">&divide;</button>
+          
+                <button type="button" value="7" class="btn btn-light waves-effect">7</button>
+                <button type="button" value="8" class="btn btn-light waves-effect">8</button>
+                <button type="button" value="9" class="btn btn-light waves-effect">9</button>
+          
+          
+                <button type="button" value="4" class="btn btn-light waves-effect">4</button>
+                <button type="button" value="5" class="btn btn-light waves-effect">5</button>
+                <button type="button" value="6" class="btn btn-light waves-effect">6</button>
+          
+          
+                <button type="button" value="1" class="btn btn-light waves-effect">1</button>
+                <button type="button" value="2" class="btn btn-light waves-effect">2</button>
+                <button type="button" value="3" class="btn btn-light waves-effect">3</button>
+          
+          
+                <button type="button" value="0" class="btn btn-light waves-effect">0</button>
+                <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
+                <button type="button" class="btn btn-danger btn-sm">C</button>
+          
+                <button type="button" class="equal-sign operator btn btn-success" value="=">=</button>
+          
+              </div>
+          
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+    <div class="headerAndFooter footer">
+        <p>Powered by M.Shaheer khan</p>
+    </div>
+</body>
+
+</html>
