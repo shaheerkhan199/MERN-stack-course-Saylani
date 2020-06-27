@@ -127,12 +127,16 @@ footer a {
     /* position: fixed !important;
     top: 20% !important;
     width: 100%; */
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    z-index: 1020;
+    top: 0; */
+    z-index: 0 !important;
+    /* background-color: red !important; */
 }
-/*Testing*/
+ul{
+    z-index: 0 !important;
+}
+/*Chabot box css*/
 
 /* The popup chat - hidden by default */
 .chat-popup {
