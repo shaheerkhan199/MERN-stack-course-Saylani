@@ -107,7 +107,7 @@ footer a {
 .cartTable > tbody > tr > td {
     vertical-align: middle;
 }
-#btn {  
+#messageBtn {  
     position: fixed;
     bottom: 10px;
     float: right;
@@ -123,6 +123,7 @@ footer a {
     border-radius: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .sticky-top{
     /* position: fixed !important;
     top: 20% !important;
@@ -172,3 +173,9 @@ iframe{
   opacity: 0.8;
 }
 
+/* Media query */
+@media only screen and (max-width: 750px) {
+    #messageBtn {  
+        left: 80%; 
+    }
+  }
