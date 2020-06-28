@@ -135,7 +135,7 @@ footer a {
     /* background-color: red !important; */
 }
 ul{
-    z-index: 0 !important;
+    z-index: 1 !important;
 }
 /*Chabot box css*/
 
@@ -156,11 +156,13 @@ ul{
   background-color: white;
   /*border:1px solid black;*/
 }
-iframe{
+.chatWindowIframe{
     width: 265px;
     height: 350px;
 }
-
+/* .mapIframe{
+    z-index: 0;
+} */
 /* Set a style for the submit/send button */
 .form-container .btn {
   /*background-color: #4CAF50;*/
@@ -179,3 +181,10 @@ iframe{
         left: 80%; 
     }
   }
+.quantity button{
+    /* display: inline-flexbox; */
+    /* background-color: red;; */
+    height: 38px;
+    margin-top: 10px;
+    font-weight: bolder;
+  } 

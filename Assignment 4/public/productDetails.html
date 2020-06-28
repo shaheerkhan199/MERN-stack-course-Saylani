@@ -106,12 +106,12 @@
   <!-- Navigation end -->
   <section>
     <div class="container bg-light border border-black">
-      <h1>Product details</h1>
       <div class="row mt-5">
         <div class="col-md-6">
+          <h1 class="ml-3 mb-5">Product details</h1>
           <img src="images/hoodie.png" class="img-fluid mb-3" alt="" width="250vh" height="250vh">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mt-2">
           <h5>Product Name:</h5>
           <p>Hoodie</p>
 
@@ -120,11 +120,34 @@
 
           <h5>Price:</h5>
           <p>Rs: 1500/=</p>
+
+          <h5>Ratings:</h5>
+          <p>5 star</p>
+
+          <h5>Quantity:</h5>
+          <div class="row quantity">
+            <div class="col-md-12">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" onclick="decrement('qty');" type="button">-</button>
+                </div>
+                <div class="form-group w-25">
+                  <!-- <label for="example1">Input with class .w-25</label> -->
+                  <input type="text" class="form-control" id="qty" value="1" disabled>
+                </div>
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" onclick="increment('qty');" type="button">+</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
           <!-- 
                 <h5>Apply Coupon:</h5>
                 <input type="text" class="form-control" placeholder="Enter promo code here"> -->
 
-          <a href="cart.html" class="btn btn-success">Add to cart
+          <a href="cart.html" class="btn btn-success mb-3 mt-3 p-3">Add to cart
             <!-- <a href="/ChatBot/ChatWindow" target="_blank" class="btn btn-warning">Negotiate</a> -->
             <i class="fas fa-shopping-cart"></i></a>
         </div>
@@ -133,66 +156,67 @@
   </section>
   <br />
   <!-- Footer -->
-<footer class="text-light">
-  <div class="container">
+  <footer class="text-light">
+    <div class="container">
       <div class="row">
-          <div class="col-md-3 col-lg-4 col-xl-3">
-              <h5>About</h5>
-              <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-              <p class="mb-0">
-                  Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-              </p>
-          </div>
+        <div class="col-md-3 col-lg-4 col-xl-3">
+          <h5>About</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <p class="mb-0">
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+          </p>
+        </div>
 
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-              <h5>Informations</h5>
-              <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-              <ul class="list-unstyled">
-                  <li><a href="">Link 1</a></li>
-                  <li><a href="">Link 2</a></li>
-                  <li><a href="">Link 3</a></li>
-                  <li><a href="">Link 4</a></li>
-              </ul>
-          </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+          <h5>Informations</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <ul class="list-unstyled">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+          </ul>
+        </div>
 
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-              <h5>Others links</h5>
-              <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-              <ul class="list-unstyled">
-                  <li><a href="">Link 1</a></li>
-                  <li><a href="">Link 2</a></li>
-                  <li><a href="">Link 3</a></li>
-                  <li><a href="">Link 4</a></li>
-              </ul>
-          </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+          <h5>Others links</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <ul class="list-unstyled">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+          </ul>
+        </div>
 
-          <div class="col-md-4 col-lg-3 col-xl-3">
-              <h5>Contact</h5>
-              <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-              <ul class="list-unstyled">
-                  <li><i class="fa fa-home mr-2"></i> My company</li>
-                  <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
-                  <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
-                  <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
-              </ul>
-          </div>
-          <div class="col-12 copyright mt-3">
-              <p class="float-left">
-                  <a href="#">Back to top</a>
-              </p>
-              <!-- <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p> -->
-          </div>
+        <div class="col-md-4 col-lg-3 col-xl-3">
+          <h5>Contact</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <ul class="list-unstyled">
+            <li><i class="fa fa-home mr-2"></i> My company</li>
+            <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
+            <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
+            <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+          </ul>
+        </div>
+        <div class="col-12 copyright mt-3">
+          <p class="float-left">
+            <a href="#">Back to top</a>
+          </p>
+          <!-- <p class="text-right text-muted">created with <i class="fa fa-heart"></i> by <a href="https://t-php.fr/43-theme-ecommerce-bootstrap-4.html"><i>t-php</i></a> | <span>v. 1.0</span></p> -->
+        </div>
       </div>
+    </div>
+  </footer>
+  <div class="bg-primary p-2 text-white">
+    <p>Powered by M.Shaheer khan</p>
   </div>
-</footer>
-<div class="bg-primary p-2 text-white">
-  <p>Powered by M.Shaheer khan</p>
-</div>
-<!-- Footer end -->
+  <!-- Footer end -->
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
