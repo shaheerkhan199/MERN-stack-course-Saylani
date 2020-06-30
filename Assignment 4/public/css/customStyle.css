@@ -212,3 +212,6 @@ ul{
 .features h3{
     font-size: 25px;
 }
+.container-fluid{
+    width: 100% !important;
+}
