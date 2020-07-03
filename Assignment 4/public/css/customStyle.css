@@ -219,3 +219,6 @@ ul{
     background-color: rgb(33, 75, 201) !important;
     border-radius: 30px !important;
 }
+.thumbnailProductImages img:hover{
+    border:2px solid black !important;
+}

@@ -12,7 +12,7 @@
 
   <link href="css/customStyle.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -110,14 +110,13 @@
         <div class="col-md-6">
           <h1 class="ml-3 mb-5">Product details</h1>
           <img src="images/hoodie.png" class="img-fluid mb-3" alt="" width="250vh" height="250vh">
-          <div class="row">
-            <div class="col-md-2"><a href="#"><img src="images/hoodie.png" class="border border-warning" height="80" width="70"></a></div>
-            <div class="col-md-2"><a href="#"><img src="images/hoodie.png" class="border border-warning" height="80" width="70"></a></div>
-            <div class="col-md-2"><a href="#"><img src="images/hoodie.png" class="border border-warning" height="80" width="70"></a></div>
-            <div class="col-md-2"><a href="#"><img src="images/hoodie.png" class="border border-warning" height="80" width="70"></a></div>
+          <div class="row thumbnailProductImages">
+            <div class="col-md-2"><a class="example-image-link" data-lightbox="roadtrip" href="images/hoodie.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image border border-warning" height="80" width="70" src="images/hoodie.png" alt=""/></a></div>
+            <div class="col-md-2"><a class="example-image-link" data-lightbox="roadtrip" href="images/hoodie.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image border border-warning" height="80" width="70" src="images/hoodie.png" alt=""/></a></div>
+            <div class="col-md-2"><a class="example-image-link" data-lightbox="roadtrip" href="images/hoodie.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image border border-warning" height="80" width="70" src="images/hoodie.png" alt=""/></a></div>
+            <div class="col-md-2"><a class="example-image-link" data-lightbox="roadtrip" href="images/hoodie.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image border border-warning" height="80" width="70" src="images/hoodie.png" alt=""/></a></div>
             <div class="col-md-2"></div>
             <div class="col-md-2"></div>
-
           </div>
         </div>
         <div class="col-md-6 mt-2">
@@ -226,6 +225,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/lightbox.min.js"></script>
 </body>
 
 </html>
