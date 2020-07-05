@@ -222,3 +222,7 @@ ul{
 .thumbnailProductImages img:hover{
     border:2px solid black !important;
 }
+.redeemBtn{
+    height: 40px;
+    margin-top: 10px;
+}
