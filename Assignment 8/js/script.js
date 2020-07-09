@@ -8,6 +8,7 @@ var interval;
 function timer() {
     millisec++;
     millisecHeading.innerHTML = millisec;
+    
     if (millisec >= 100) {
         sec++;
         secHeading.innerHTML = sec;
@@ -31,8 +32,8 @@ function reset() {
     millisec = 0;
     sec = 0;
     min = 0;
-    millisecHeading.innerHTML = millisec;
-    secHeading.innerHTML = sec;
-    minHeading.innerHTML = min;
+    millisecHeading.innerHTML = millisec+"0";
+    secHeading.innerHTML = sec+"0";
+    minHeading.innerHTML = min+"0";
     pause();
 }

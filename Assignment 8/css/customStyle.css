@@ -1,5 +1,10 @@
-h1{
+/* h1{
     display: inline-block;
+} */
+.box div{
+    display: inline-block;
+    /* background-color: red;
+    margin: 10px; */
 }
 .box{
     border-radius: 10px;
