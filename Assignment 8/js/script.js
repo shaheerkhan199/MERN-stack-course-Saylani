@@ -20,11 +20,20 @@ function timer() {
         sec = 0;
     }
 }
+function changeHeadingColors(color){
+    var headings = document.getElementsByTagName("h1");
+    for(var i=1; i<headings.length; i++){
+        headings[i].style.setProperty("color", color , "important");
+    }
+}
+
 function start() {
+    changeHeadingColors("royalblue");
     document.getElementById("startBtn").disabled = true;
     interval = setInterval(timer, 10);
 }
 function pause() {
+    changeHeadingColors("gray");
     document.getElementById("startBtn").disabled = false;
     clearInterval(interval);
 }
@@ -36,4 +45,5 @@ function reset() {
     secHeading.innerHTML = sec+"0";
     minHeading.innerHTML = min+"0";
     pause();
+    changeHeadingColors("black");
 }

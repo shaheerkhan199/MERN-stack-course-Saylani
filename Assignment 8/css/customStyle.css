@@ -1,17 +1,21 @@
-/* h1{
-    display: inline-block;
-} */
+
+
 .box div{
     display: inline-block;
-    /* background-color: red;
-    margin: 10px; */
 }
 .box{
-    border-radius: 10px;
-    padding: 15px;
-    background-color: lightgrey !important;
-    opacity: 0.8;
-    margin-top: 20vh;   
+    border-radius: 20px;
+    padding: 50px;
+    background-color: lightgray !important;
+    margin-top: 20vh;
+    transition: 1s;
+}
+.box:hover{
+    background-color: white !important;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #888888;
+     /* rgb(126, 125, 125); */
 }
 .controls{
     text-align: center;
