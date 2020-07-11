@@ -31,11 +31,17 @@ function showPrompt() {
         }
     });
 }
-// Testing
+// Code to open and close chatbot iframe
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+}
+function showOptionOfPayment(){
+    var payOption = document.getElementById("select").value;
+    if(payOption == "Online"){
+        document.getElementById("onlinePay").style.display = "block";
+    }
 }

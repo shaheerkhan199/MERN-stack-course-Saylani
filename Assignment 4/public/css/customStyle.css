@@ -226,3 +226,8 @@ ul{
     height: 40px;
     margin-top: 10px;
 }
+#onlinePay{
+    border: 1px solid steelblue;
+    padding: 20px;
+    display: none;
+}
