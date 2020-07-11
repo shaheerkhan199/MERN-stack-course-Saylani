@@ -25,7 +25,7 @@ input[type="text"]{
     /* width: 80% !important; */
     margin-left: auto !important;
 }
-p{
+#titlePara{
     text-align: center;
     text-decoration: underline;
 }
