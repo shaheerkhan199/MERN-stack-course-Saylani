@@ -43,5 +43,7 @@ function showOptionOfPayment(){
     var payOption = document.getElementById("select").value;
     if(payOption == "Online"){
         document.getElementById("onlinePay").style.display = "block";
+    }else{
+        document.getElementById("onlinePay").style.display = "none";
     }
 }
