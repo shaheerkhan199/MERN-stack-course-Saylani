@@ -1,1 +1,0 @@
-TO do app using Bootstrap and JS (two approaches)
