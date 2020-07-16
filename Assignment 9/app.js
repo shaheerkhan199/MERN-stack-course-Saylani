@@ -295,25 +295,40 @@
     //     document.getElementById("content_para").innerHTML = content;
     // }
 // Question 3
+    // <style>
+    //     .editBox{
+    //         display: none;
+    //     }
+    // </style>
     // <form>
-    //     <h1>Enter your data</h1>
-    //     <label>Your name</label>
-    //     <input type="text" id="name">
-    //     <br><br>
-    //     <label>Age</label>
-    //     <input type="text" id="age">
-    //     <br><br>
-    //     <input type="button" value="Add data" onclick="add_data_into_table();">
+        // <h1>Enter your data</h1>
+        // <label>Your name</label>
+        // <input type="text" id="name">
+        // <br><br>
+        // <label>Age</label>
+        // <input type="text" id="age">
+        // <br><br>
+        // <input type="button" value="Add data" onclick="add_data_into_table();">
     // </form>
     // <br>
     // <table border="1" id="mytable">
-    //     <tr>
-    //         <th>Index</th>
-    //         <th>Name</th>
-    //         <th>Age</th>
-    //         <th></th>
-    //     </tr>
+        // <tr>
+        //     <th>Index</th>
+        //     <th>Name</th>
+        //     <th>Age</th>
+        //     <th></th>
+        // </tr>
     // </table>
+    // <div class="editBox" id="editBox">
+        // <h1>Edit your data</h1>
+        // <label>Your name</label>
+        // <input type="text" id="editBoxName">
+        // <br><br>
+        // <label>Age</label>
+        // <input type="text" id="editBoxAge">
+        // <br><br>
+        // <input type="button" value="Update" onclick="">
+    // </div>
 // function add_data_into_table(){
 //     var rows = document.getElementsByTagName("tr");
 //     var name_field = document.getElementById("name");
@@ -326,17 +341,89 @@
 //     var index = document.createTextNode(rows.length-1);
 //     var name = document.createTextNode(name_field.value);
 //     var age = document.createTextNode(age_field.value);
-//     var button = document.createElement("button");
+//     var deletebutton = document.createElement("button");
+//     var editbutton = document.createElement("button");
 //     var table = document.getElementById("mytable");
-//     button.innerHTML = "Delete";
-//     button.onclick = function(){table.removeChild(tr)};
+//     deletebutton.innerHTML = "Delete";
+//     editbutton.innerHTML = "Edit";
+//     deletebutton.onclick = function(){table.removeChild(tr)};
+//     var editForm = document.getElementById("editBox");
+//     editbutton.onclick = function(){
+//         editForm.style.display = 'block';
+//         document.getElementById("editBoxName").value = name_field.value;
+//         document.getElementById("editBoxAge").value = age_field.value;
+//         // console.log(table.rows[1].cells[0]);
+//     };
 //     td0.appendChild(index);
 //     td1.appendChild(name);
 //     td2.appendChild(age);
-//     td3.appendChild(button);
+//     td3.appendChild(deletebutton);
+//     td3.appendChild(editbutton);
 //     tr.appendChild(td0);
 //     tr.appendChild(td1);
 //     tr.appendChild(td2);
 //     tr.appendChild(td3);
 //     table.appendChild(tr);
+//     name_field.value = "";
+//     age_field.value = ""
 // }
+
+// Chapter 52-57
+//  Later assignments (Ambiguity)
+
+
+// Chapter 58-67
+// Question 1
+    // // part i
+    //     var my_content = document.getElementById("form-content");
+    // // part ii
+    //     var my_content = document.getElementById("form-content");
+    //     var child_elements = my_content.childNodes;
+    //     for(var i=0; i<child_elements.length; i++){
+    //         console.log(child_elements[i]);
+    //     }
+    // // part iii
+    //     var all_elements = document.getElementsByClassName("render");
+    //     for(var i=0; i<all_elements.length; i++){
+    //         console.log(all_elements[i].innerHTML);
+    //     }
+    // // part iv
+    //     var firstname_input_field = document.getElementById("first-name");
+    //     firstname_input_field.value = "M.Shaheer";
+    // // part v
+    //     var lastname_input_field = document.getElementById("last-name");
+    //     var email_input_field = document.getElementById("email");
+    //     lastname_input_field.value = "khan";
+    //     email_input_field.value= "m.shaheerkhan199@gmail.com";
+// Question 2
+    // part i
+        // var element = document.getElementById("form-content");
+        // var node_type = element.nodeType;
+        // console.log(node_type); 
+    // part ii
+        // var element = document.getElementById("lastName");
+        // var node_type = element.nodeType;
+        // var child_node = element.childNodes
+        // console.log(node_type)
+        // console.log(child_node[0])
+    // part iii
+        // var element = document.getElementById("lastName");
+        // element.innerHTML = "Last Name: Smith";
+    // part iv
+        // var element = document.getElementById("main-content");
+        // var first_child = element.firstChild;
+        // var last_child = element.lastChild;
+        // console.log(first_child);
+        // console.log(last_child);
+    // part v
+        // var element = document.getElementById("lastName");
+        // var previous_sibling = element.previousSibling;
+        // var next_sibling = element.nextSibling;
+        // console.log(previous_sibling);
+        // console.log(next_sibling);
+    // part vi
+        // var element = document.getElementById("email");
+        // var parent = element.parentNode;
+        // var node_type = element.nodeType;
+        // console.log(parent);
+        // console.log(node_type);
