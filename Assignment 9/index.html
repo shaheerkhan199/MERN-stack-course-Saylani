@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <form>
+        <h1>Enter your data</h1>
+        <label>Your name</label>
+        <input type="text" id="name">
+        <br><br>
+        <label>Age</label>
+        <input type="text" id="age">
+        <br><br>
+        <input type="button" value="Add data" onclick="">
+    </form>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)""></td>
+        </tr>
+    </table>
     <script src="app.js"></script>
 </body>
+
 </html>

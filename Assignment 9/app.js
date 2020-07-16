@@ -135,3 +135,208 @@
     // var remaining = Math.floor((((amount % 100) % 50) % 10));
     // document.write("You will have "+ hundred +" hundred notes "+fifty +" fifty notes and "+ten+" ten notes <br>");
     // document.write("Your remaining amount is: "+ remaining);
+
+// Chapter 43-48
+// Question 1
+    // <a href="Javascript:void(0)" onclick="alert('Your clicked on a link')">Click on me</a>
+// Question 2
+    // <div>
+    //     <a href="Javascript:void(0)" onclick="show_alert();"><img src="images/mobile.jpg" height="300" width="300" border="1"></a>
+    // </div>
+    // function show_alert(){
+    //     alert("Thanks for purchasing a phone from us");
+    // }
+
+// Question 3
+    // <table>
+    //     <tr>
+    //         <th>Index</th>
+    //         <th>Name</th>
+    //         <th>Age</th>
+    //         <th></th>
+    //     </tr>
+    //     <tr>
+    //         <td>0</td>
+    //         <td>Jhone</td>
+    //         <td>10</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>1</td>
+    //         <td>Doe</td>
+    //         <td>9</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)""></td>
+    //     </tr>
+    //     <tr>
+    //         <td>2</td>
+    //         <td>Mark</td>
+    //         <td>10</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>3</td>
+    //         <td>James</td>
+    //         <td>8</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>4</td>
+    //         <td>Kashif</td>
+    //         <td>15</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>5</td>
+    //         <td>Salman</td>
+    //         <td>16</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>6</td>
+    //         <td>Ahmed</td>
+    //         <td>19</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>7</td>
+    //         <td>Zeeshan</td>
+    //         <td>22</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>8</td>
+    //         <td>Irfan</td>
+    //         <td>12</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    //     <tr>
+    //         <td>9</td>
+    //         <td>Qasim</td>
+    //         <td>28</td>
+    //         <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+    //     </tr>
+    // </table>
+    // function deleteRow(btn) {
+    //     var row = btn.parentNode.parentNode;
+    //     console.log(row.parentNode);
+    //     row.parentNode.removeChild(row);
+    //   }
+
+// Question 4
+    // <h1>Just mouse over on image and see the effect</h1>
+    // <img src="images/offbulb.jpg" id="image" height="300" width="300" onmouseout="change_image('offbulb.jpg');" onmouseover="change_image('onbulb.jpg');">
+    // function change_image(image_name){
+    //     document.getElementById("image").src = "images/"+image_name;
+    // }
+// Question 5
+    // <div>
+    //     <button id="dec" onClick="decrement('textBox2');"><b>-</b></button>
+    //     <input type="text" id="textBox2" value="1" readonly>
+    //     <button id="inc" onClick="increment('textBox2');"><b>+</b></button>
+    // </div>
+    // function increment(textBoxId) {
+    //     var textBox = document.getElementById(textBoxId);
+    //     var textBoxValue = Number(textBox.value);
+    //     textBoxValue++;
+    //     textBox.value = textBoxValue;
+    // }
+    // function decrement(textBoxId) {
+    //     var textBox = document.getElementById(textBoxId);
+    //     var textBoxValue = Number(textBox.value);
+    //     if (textBoxValue != 1) {
+    //         textBoxValue--;
+    //     }
+    //     textBox.value = textBoxValue;
+    // }
+
+    // Chapter 49-52
+    // Question 1
+    // <form>
+    //     <h1>Signup Form</h1>
+    //     <label>Full name:</label>
+    //     <input type="text" id="full_name">
+    //     <br><br>
+    //     <label>Enter password:</label>
+    //     <input type="password" id="pass">
+    //     <br><br>
+    //     <label>Cnic</label>
+    //     <input type="text" id="cnic">
+    //     <br><br>
+    //     <label>City</label>
+    //     <select id="city">
+    //         <option value="karachi">karachi</option>
+    //         <option value="Lahore">Lahore</option>
+    //         <option value="Islamabad">Islamabad</option>
+    //         <option value="Hyderabad">Hyderabad</option>
+    //     </select>
+    //     <br><br>
+    //     <input type="button" value="submit" onclick="display_data();">
+    //     <input type="reset">
+    // </form>
+        // function display_data(){
+        //     document.write("Your entered these details in form<br>");
+        //     var full_name_field = document.getElementById("full_name");
+        //     var pass_field = document.getElementById("pass");
+        //     var cnic_field = document.getElementById("cnic");
+        //     var city_field = document.getElementById("city");
+        //     document.write(full_name_field.value +"<br>");
+        //     document.write(pass_field.value +"<br>");
+        //     document.write(cnic_field.value +"<br>");
+        //     document.write(city_field.value +"<br>");
+        // }
+    
+// Question 2
+    // <p id="content_para">
+    //     Lorem, ipsum...
+    // </p>
+    // <a href="Javascript:void(0)" onclick="see_more();">See more</a>
+    // function see_more(){
+    //     var content = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, rerum cupiditate. Nesciunt debitis hic temporibus quis molestias eius porro dicta? Magnam quos nesciunt est, aspernatur ullam libero placeat quia alias?";
+    //     document.getElementById("content_para").innerHTML = content;
+    // }
+// Question 3
+    // <form>
+    //     <h1>Enter your data</h1>
+    //     <label>Your name</label>
+    //     <input type="text" id="name">
+    //     <br><br>
+    //     <label>Age</label>
+    //     <input type="text" id="age">
+    //     <br><br>
+    //     <input type="button" value="Add data" onclick="add_data_into_table();">
+    // </form>
+    // <br>
+    // <table border="1" id="mytable">
+    //     <tr>
+    //         <th>Index</th>
+    //         <th>Name</th>
+    //         <th>Age</th>
+    //         <th></th>
+    //     </tr>
+    // </table>
+// function add_data_into_table(){
+//     var rows = document.getElementsByTagName("tr");
+//     var name_field = document.getElementById("name");
+//     var age_field = document.getElementById("age");
+//     var tr = document.createElement("tr");
+//     var td0 = document.createElement("td");
+//     var td1 = document.createElement("td");
+//     var td2 = document.createElement("td");
+//     var td3 = document.createElement("td");
+//     var index = document.createTextNode(rows.length-1);
+//     var name = document.createTextNode(name_field.value);
+//     var age = document.createTextNode(age_field.value);
+//     var button = document.createElement("button");
+//     var table = document.getElementById("mytable");
+//     button.innerHTML = "Delete";
+//     button.onclick = function(){table.removeChild(tr)};
+//     td0.appendChild(index);
+//     td1.appendChild(name);
+//     td2.appendChild(age);
+//     td3.appendChild(button);
+//     tr.appendChild(td0);
+//     tr.appendChild(td1);
+//     tr.appendChild(td2);
+//     tr.appendChild(td3);
+//     table.appendChild(tr);
+// }
