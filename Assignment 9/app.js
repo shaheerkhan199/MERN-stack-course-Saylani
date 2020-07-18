@@ -369,8 +369,35 @@
 // }
 
 // Chapter 52-57
-//  Later assignments (Ambiguity)
-
+//  Question 1
+    var images = ['1.jpg','2.jpg','3.jpg','4.png','5.jpg','6.jpg','7.png','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.png','15.jpg'];
+    for (var i=0; i<=14; i++){
+        // var image = "<a href='Javascript:void(0)' onclick='showinModal(images[i]);'><img src='images/others/"+ images[i] +"' height='200' width='200'></a>";
+        var image = "<img onclick=showinModal('"+images[i]+"') src='images/others/"+ images[i] +"' height='200' width='200'>";
+        document.write(image);
+    }
+    function showinModal(imageName){
+        alert(imageName);
+    }
+//  Question 2
+    // <input type="button" value="Zoom in" onclick="zoomin_and_zoomout('+');">
+    // <input type="button" value="Zoom out" onclick="zoomin_and_zoomout('-');">
+    // <p id="para">This is my paragraph</p>
+    // var font_size = 10;
+    // function zoomin_and_zoomout(operator) {
+    //     if (operator === "+") {
+    //         var para = document.getElementById("para");
+    //         font_size += 10;
+    //         para.style.fontSize = font_size + "px";
+    //     }
+    //     if (operator === "-") {
+    //         if (font_size > 20) {
+    //             var para = document.getElementById("para");
+    //             font_size -= 10;
+    //             para.style.fontSize = font_size + "px";
+    //         }
+    //     }
+    // }
 
 // Chapter 58-67
 // Question 1
