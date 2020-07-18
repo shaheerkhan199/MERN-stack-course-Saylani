@@ -1391,18 +1391,18 @@ document.write("Area is: "+calcArea(2.5));
       }
 
 // Question 4
-    // <h1>Just mouse over on image and see the effect</h1>
-    // <img src="images/offbulb.jpg" id="image" height="300" width="300" onmouseout="change_image('offbulb.jpg');" onmouseover="change_image('onbulb.jpg');">
+     <h1>Just mouse over on image and see the effect</h1>
+     <img src="images/offbulb.jpg" id="image" height="300" width="300" onmouseout="change_image('offbulb.jpg');" onmouseover="change_image('onbulb.jpg');">
     function change_image(image_name){
         document.getElementById("image").src = "images/"+image_name;
     }
 
 // Question 5
-    // <div>
-    //     <button id="dec" onClick="decrement('textBox2');"><b>-</b></button>
-    //     <input type="text" id="textBox2" value="1" readonly>
-    //     <button id="inc" onClick="increment('textBox2');"><b>+</b></button>
-    // </div>
+     <div>
+         <button id="dec" onClick="decrement('textBox2');"><b>-</b></button>
+         <input type="text" id="textBox2" value="1" readonly>
+         <button id="inc" onClick="increment('textBox2');"><b>+</b></button>
+     </div>
     function increment(textBoxId) {
         var textBox = document.getElementById(textBoxId);
         var textBoxValue = Number(textBox.value);
@@ -1420,28 +1420,28 @@ document.write("Area is: "+calcArea(2.5));
 
 // Chapter 49-52
 // Question 1
-    // <form>
-    //     <h1>Signup Form</h1>
-    //     <label>Full name:</label>
-    //     <input type="text" id="full_name">
-    //     <br><br>
-    //     <label>Enter password:</label>
-    //     <input type="password" id="pass">
-    //     <br><br>
-    //     <label>Cnic</label>
-    //     <input type="text" id="cnic">
-    //     <br><br>
-    //     <label>City</label>
-    //     <select id="city">
-    //         <option value="karachi">karachi</option>
-    //         <option value="Lahore">Lahore</option>
-    //         <option value="Islamabad">Islamabad</option>
-    //         <option value="Hyderabad">Hyderabad</option>
-    //     </select>
-    //     <br><br>
-    //     <input type="button" value="submit" onclick="display_data();">
-    //     <input type="reset">
-    // </form>
+    <form>
+         <h1>Signup Form</h1>
+         <label>Full name:</label>
+         <input type="text" id="full_name">
+         <br><br>
+         <label>Enter password:</label>
+         <input type="password" id="pass">
+         <br><br>
+         <label>Cnic</label>
+         <input type="text" id="cnic">
+         <br><br>
+         <label>City</label>
+         <select id="city">
+             <option value="karachi">karachi</option>
+             <option value="Lahore">Lahore</option>
+             <option value="Islamabad">Islamabad</option>
+             <option value="Hyderabad">Hyderabad</option>
+         </select>
+         <br><br>
+         <input type="button" value="submit" onclick="display_data();">
+         <input type="reset">
+     </form>
         function display_data(){
             document.write("Your entered these details in form<br>");
             var full_name_field = document.getElementById("full_name");
