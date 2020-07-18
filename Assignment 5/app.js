@@ -756,7 +756,6 @@ document.write("Full Array: " + arr + "<br>");
 document.write("Minimum Number in array is: " + min);
 
 
-
 // Question 10
 for (i = 1; i <= 20; i++) {
     document.write((5 * i) + ", ");
