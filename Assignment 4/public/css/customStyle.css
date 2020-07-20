@@ -226,21 +226,8 @@ ul{
     display: none;
 }
 
-/* Media query for thumbnail images*/
-@media only screen and (max-width: 575px) {
-    .thumbnailProductImages div{
-        width: 20%;
-    }
-}
 
-/* Media query for chat button on homepage*/
-@media only screen and (max-width: 750px) {
-    #messageBtn {  
-        left: 80%; 
-    }
-  }
-
-  /* Login Page css */
+  /* Login Page css downloaded from internet*/
   
 /* BASIC */
 
@@ -500,3 +487,29 @@ ul{
     width:60%;
   }
   
+  
+  /* Media query for thumbnail images*/
+@media only screen and (max-width: 575px) {
+  .thumbnailProductImages div{
+      width: 20%;
+  }
+  
+}
+
+/* Media query for chat button on homepage*/
+@media only screen and (max-width: 750px) {
+  #messageBtn {  
+      left: 80%; 
+  }
+}
+
+/* Media query for quantity increase and decrease button on cart page*/
+@media only screen and (max-width: 765px) {
+  .quantity{
+    width: 150px;
+  }
+  .singleProductQty{
+    width: 400px !important;
+  }
+  
+}
