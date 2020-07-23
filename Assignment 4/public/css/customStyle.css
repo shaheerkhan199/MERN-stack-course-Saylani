@@ -504,7 +504,7 @@ ul{
 }
 
 /* Media query for quantity increase and decrease button on cart page*/
-@media only screen and (max-width: 765px) {
+/* @media only screen and (max-width: 765px) {
   .quantity{
     width: 150px;
   }
@@ -512,4 +512,4 @@ ul{
     width: 400px !important;
   }
   
-}
+} */
