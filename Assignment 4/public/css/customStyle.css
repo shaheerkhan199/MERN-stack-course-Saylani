@@ -503,13 +503,13 @@ ul{
   }
 }
 
-/* Media query for quantity increase and decrease button on cart page*/
-/* @media only screen and (max-width: 765px) {
+/*Media query for quantity increase and decrease button on cart page*/
+@media only screen and (max-width: 765px) {
   .quantity{
     width: 150px;
   }
   .singleProductQty{
-    width: 400px !important;
+    width: 200px !important;
   }
   
-} */
+}
