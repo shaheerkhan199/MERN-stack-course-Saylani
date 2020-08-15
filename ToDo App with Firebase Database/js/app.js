@@ -47,11 +47,13 @@ function getAllData() {
         // Creating element nodes
         var editBtn = document.createElement("button");
         editBtn.innerHTML = "Edit";
+        editBtn.setAttribute("class", "btn btn-warning");
         editBtn.onclick = editData;
         // editBtn.setAttribute("onclick", "editData(this)")
         editBtn.setAttribute("id", data.val().Id);
         var deleteBtn = document.createElement("button");
         deleteBtn.innerHTML = "Delete";
+        deleteBtn.setAttribute("class", "btn btn-danger");
         deleteBtn.onclick = deleteData;
         deleteBtn.setAttribute("id", data.val().Id);
 
@@ -105,11 +107,13 @@ function getAllData() {
                 // Creating element nodes
                 var editBtn = document.createElement("button");
                 editBtn.innerHTML = "Edit";
+                editBtn.setAttribute("class", "btn btn-warning");
                 editBtn.onclick = editData;
                 // editBtn.setAttribute("onclick", "editData(this)")
                 editBtn.setAttribute("id", singleObject.Id);
                 var deleteBtn = document.createElement("button");
                 deleteBtn.innerHTML = "Delete";
+                deleteBtn.setAttribute("class", "btn btn-danger");
                 deleteBtn.onclick = deleteData;
                 deleteBtn.setAttribute("id", singleObject.Id);
 

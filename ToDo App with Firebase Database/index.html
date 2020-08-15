@@ -6,38 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <style>
-        body{
-            text-align: center;
-        }
-        table,tr,td{
-            width: 40%;
-            border:1px solid black;
-            border-collapse: collapse;
-            padding: 10px;
-            text-align: center;
-            margin: auto;
-        }
-        tr:first-child{
-            background-color: lightgray;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <input type="text" placeholder="Enter your task here" id="inputBox">
-    <input type="button" value="Add Task" id="addBtn">
-    <input type="button" value="Delete All Task" onclick="deleteAllData()">
-    <hr>
-    <h1>Your Data will show here</h1>
-    <table id="dataTable">
-        <!-- <tr>
-            <td>S.No</td>
-            <td>Task</td>
-            <td>Edit</td>
-            <td>Delete</td>
-        </tr> -->
-    </table>
+    <div class="container">
+        <h1>Awesome Todo App (with Firebase Database)</h1>
+        <input type="text" class="form-control " placeholder="Enter your task here" id="inputBox">
+        <input type="button" value="Add Task" class="btn btn-primary mt-2" id="addBtn">
+        <input type="button" value="Delete All Task" class="btn btn-danger mt-2" onclick="deleteAllData()">
+        <hr>
+        <h5>Your Data will show here</h5>
+        <table id="dataTable" class="table table-hover table-bordered ">
+            
+        </table>
+    </div>
+    
 
     
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
@@ -60,10 +46,13 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        // console.log(firebase);
 
     </script>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
 </body>
 
 </html>

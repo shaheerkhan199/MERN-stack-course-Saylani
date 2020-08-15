@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+tr:first-child{
+    background-color: lightgray;
+}
+tr:hover{
+    background-color: powderblue;
+}
