@@ -36,7 +36,8 @@ function getAllData() {
 
     // Fetching data from firebase database
     // This function run as many times as data instances in database
-    var data = firebase.database().ref("Tasks").on('child_added', function (data) {
+    firebase.database().ref("Tasks").on('child_added', function (data) {
+        console.log("Runs");
         // Creating table rows and columns
         var row = document.createElement("tr");
         var col1 = document.createElement("td");
@@ -67,6 +68,74 @@ function getAllData() {
 
         counter++;
     });
+
+    // When child is removed update the whole table
+    firebase.database().ref("Tasks").on('child_removed', function (oldChildSnapshot) {
+        console.log("Child is removed");
+        console.log(oldChildSnapshot.val());
+        dataTable.innerHTML = "";
+        counter = 1;
+
+        // Creating table header
+    var headerRow = document.createElement("tr");
+    var headerCol1 = document.createElement("td");
+    var headerCol2 = document.createElement("td");
+    var headerCol3 = document.createElement("td");
+    var headerCol4 = document.createElement("td");
+
+    headerCol1.appendChild(document.createTextNode("S.No"));
+    headerCol2.appendChild(document.createTextNode("Task"));
+    headerCol3.appendChild(document.createTextNode("Edit"));
+    headerCol4.appendChild(document.createTextNode("Delete"));
+    headerRow.appendChild(headerCol1);
+    headerRow.appendChild(headerCol2);
+    headerRow.appendChild(headerCol3);
+    headerRow.appendChild(headerCol4);
+    dataTable.appendChild(headerRow);
+
+    firebase.database().ref("Tasks").once("value", function(data){
+        console.log(data.val());
+        for(var key in data.val()){
+            // console.log(key);
+            var dataObject = data.val()
+            var singleObject = dataObject[key]
+            // console.log(singleObject);
+            // console.log(singleObject.Id);
+            // console.log(singleObject.Task_name)
+            // Creating table rows and columns
+        var row = document.createElement("tr");
+        var col1 = document.createElement("td");
+        var col2 = document.createElement("td");
+        var col3 = document.createElement("td");
+        var col4 = document.createElement("td");
+
+        // Creating element nodes
+        var editBtn = document.createElement("button");
+        editBtn.innerHTML = "Edit";
+        editBtn.onclick = editData;
+        // editBtn.setAttribute("onclick", "editData(this)")
+        editBtn.setAttribute("id", singleObject.Id);
+        var deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "Delete";
+        deleteBtn.onclick = deleteData;
+        deleteBtn.setAttribute("id", singleObject.Id);
+
+        col1.appendChild(document.createTextNode(counter));
+        col2.appendChild(document.createTextNode(singleObject.Task_name));
+        col3.appendChild(editBtn);
+        col4.appendChild(deleteBtn);
+        row.appendChild(col1);
+        row.appendChild(col2);
+        row.appendChild(col3);
+        row.appendChild(col4);
+        dataTable.appendChild(row);
+
+        counter++; 
+        }
+    });
+
+
+    });
 }
 
 getAllData();
@@ -88,10 +157,9 @@ function deleteData(e) {
 
     // Updating table after deleting data
     var dataTable = document.getElementById("dataTable");
-    dataTable.innerHTML = "";
-    counter = 1;
-    getAllData();
-    
+    // dataTable.innerHTML = "";
+    // counter = 1;
+    // getAllData();
 }
 function deleteAllData(){
     firebase.database().ref("Tasks").remove();
