@@ -2,42 +2,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-  <link href="css/customStyle.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            text-align: center;
+        }
+        table,tr,td{
+            width: 40%;
+            border:1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+            margin: auto;
+        }
+        tr:first-child{
+            background-color: lightgray;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
+    <input type="text" placeholder="Enter your task here" id="inputBox">
+    <input type="button" value="Add Task" id="addBtn">
+    <input type="button" value="Delete All Task" onclick="deleteAllData()">
+    <hr>
+    <h1>Your Data will show here</h1>
+    <table id="dataTable">
+        <!-- <tr>
+            <td>S.No</td>
+            <td>Task</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr> -->
+    </table>
 
-    <div class="box">
-      <div class="form-group">
-        <h1>Todo App</h1>
-        <input type="text" placeholder="wite your task here" class="form-control" id="textBox">
-        <input type="button" value="Add Task" class="btn btn-success addTaskBtn" onclick="addTask();">
-      </div>
-      <input type="button" class="btn btn-danger ml-5 deleteAllBtn" value="Delete All Task" onclick="deleteAllTask();">
-      <p id="titlePara">All your task will show here...</p>
-      <!-- Method 1 -->
-      <ol id="orderlist">
-      </ol>
-      <!-- Method 2 -->
-      <!-- <p id="orderListSpace"></p> -->
-    </div>
-  </div>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+    <script>
+        // Firebase Database connectivity
+        // <!-- The core Firebase JS SDK is always required and must be listed first -->
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBdKRtZMoKx76iGx5ngEQGoruK9k8kJeb8",
+            authDomain: "todo-app-19b46.firebaseapp.com",
+            databaseURL: "https://todo-app-19b46.firebaseio.com",
+            projectId: "todo-app-19b46",
+            storageBucket: "todo-app-19b46.appspot.com",
+            messagingSenderId: "274598716024",
+            appId: "1:274598716024:web:72ad1a62bb0b1d6730838d",
+            measurementId: "G-9XF1EDCW0Q"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        // console.log(firebase);
+
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
