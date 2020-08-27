@@ -5,11 +5,9 @@ var para = document.getElementById("timer");
 //     para.innerHTML = "Hello";
 // },3000);
 
-// 
+// setInterval runs the function continious with duration provided in the parameter
 var i = 1;
 setInterval(function(){
-    // para.innerHTML += " Hello";
     para.innerHTML = i;
     i++;
 }, 1000);
-// console.log("End line");
