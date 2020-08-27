@@ -6,8 +6,8 @@ var para = document.getElementById("timer");
 // },3000);
 
 // setInterval runs the function continious with duration provided in the parameter
-var i = 1;
-setInterval(function(){
+let i = 1;
+var timer = setInterval(function(){
     para.innerHTML = i;
     i++;
 }, 1000);
